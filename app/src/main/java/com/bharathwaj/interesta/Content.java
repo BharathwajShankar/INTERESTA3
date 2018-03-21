@@ -25,6 +25,7 @@ public class Content extends Activity implements AdapterView.OnItemSelectedListe
         final Spinner spinner = (Spinner) findViewById( R.id.spinner1 );
         Button button = (Button) findViewById( R.id.button1 );
         ImageButton img = findViewById( R.id.imageButton );
+        ImageButton img1 = findViewById( R.id.imageButton2 );
         // Spinner click listener
         spinner.setOnItemSelectedListener( this );
 
@@ -130,7 +131,15 @@ public class Content extends Activity implements AdapterView.OnItemSelectedListe
                 }
             }
         } );
-img.setOnClickListener( new View.OnClickListener() {
+        img.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent( Content.this,AddContents.class );
+                startActivity( i );
+            }
+        } );
+
+        img1.setOnClickListener( new View.OnClickListener() {
     @Override
     public void onClick(View v) {
         Intent i = new Intent( Content.this,ChatActivity.class );
