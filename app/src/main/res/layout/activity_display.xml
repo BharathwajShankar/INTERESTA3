@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bharathwaj.interesta.DisplayActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/displayTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="cursive"
+            android:isScrollContainer="true"
+            android:lineSpacingExtra="8sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />
+    </ScrollView>
+
+    <ZoomControls
+
+        android:id="@+id/textZoomControl"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        tools:ignore="MissingConstraints,NotSibling"
+        tools:layout_editor_absoluteX="272dp"
+        tools:layout_editor_absoluteY="462dp">
+
+    </ZoomControls>
+
+
+</android.support.constraint.ConstraintLayout>

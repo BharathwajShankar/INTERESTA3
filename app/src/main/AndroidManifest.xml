@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bharathwaj.interesta">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Information" />
+        <activity android:name=".Tutorial" />
+        <activity android:name=".DisplayActivity" />
+        <activity android:name=".AddContents" />
+        <activity android:name=".Cricket" />
+        <activity android:name=".Content"></activity>
+        <activity android:name=".Football"></activity>
+        <activity android:name=".Horoscope" />
+        <activity android:name=".Music" />
+        <activity android:name=".Petcare" />
+        <activity android:name=".Photography" />
+        <activity android:name=".Reading" />
+        <activity android:name=".Tourism" />
+        <activity android:name=".Unnamedmysteries" />
+        <activity android:name=".Beauty" />
+        <activity android:name=".Bodybuilding" />
+        <activity android:name=".Dance" />
+        <activity android:name=".Doodling" />
+        <activity android:name=".Driving" />
+        <activity android:name=".Food" />
+        <activity android:name=".Gaming" />
+        <activity android:name=".ChatActivity"></activity>
+    </application>
+
+</manifest>

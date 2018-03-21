@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "408988734716",
+    "firebase_url": "https://interesta3.firebaseio.com",
+    "project_id": "interesta3",
+    "storage_bucket": "interesta3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408988734716:android:c5bc61a12fcf8b16",
+        "android_client_info": {
+          "package_name": "com.bharathwaj.interesta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408988734716-6i2hoji67vhhg2l00595224h1durg9r7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bharathwaj.interesta",
+            "certificate_hash": "87aed2f63748a27c4c77d0c34c9f40af8708495c"
+          }
+        },
+        {
+          "client_id": "408988734716-kk2rdeh8ktq83lpuqviofnppuevap5r6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUSubskS8uzOevc4mdsuTNNPR27DagWIY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408988734716-kk2rdeh8ktq83lpuqviofnppuevap5r6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
