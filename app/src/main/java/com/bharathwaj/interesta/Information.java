@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -22,6 +23,8 @@ public class Information extends AppCompatActivity implements AdapterView.OnItem
         // Spinner element
         final Spinner spinner = (Spinner) findViewById(R.id.spinner);
         Button button=(Button)findViewById(R.id.button);
+        ImageButton button1 = findViewById( R.id.imageButton3 );
+        ImageButton button2 = findViewById( R.id.imageButton4 );
 
         // Spinner click listener
         spinner.setOnItemSelectedListener(this);
@@ -63,6 +66,20 @@ public class Information extends AppCompatActivity implements AdapterView.OnItem
                 startActivity(intent);
             }
         });
+        button1.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent( Information.this,Feedback.class );
+                startActivity( intent1 );
+            }
+        } );
+        button2.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent( Information.this,Rad.class );
+                startActivity( intent2 );
+            }
+        } );
     }
 
     @Override

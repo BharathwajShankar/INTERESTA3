@@ -4,31 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/dddd"
     tools:context="com.bharathwaj.interesta.ChatActivity">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ListView
             android:id="@+id/list_of_messages"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_above="@+id/input"
+            android:labelFor="@id/input"
             tools:ignore="UnknownId">
 
         </ListView>
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textMultiLine"
             android:id="@+id/input"
             android:layout_alignParentBottom="true"/>
+
         <Button
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_toEndOf="@+id/input"
-            android:text="@string/send"/>
+            android:layout_below="@+id/list_of_messages"
+            android:layout_marginEnd="@dimen/activity_vertical_margin"
+            android:layout_marginStart="309dp"
+            android:text="@string/send" />
 
     </RelativeLayout>
 

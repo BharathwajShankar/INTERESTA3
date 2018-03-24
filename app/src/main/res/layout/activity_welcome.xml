@@ -1,26 +1,26 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv1"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ccc"
     tools:context=".MainActivity">
 
 
     <LinearLayout
-        android:orientation="vertical"
-        android:padding="10dip"
         android:id="@+id/linear_layout"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip">
 
         <!-- Text Label -->
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="10dip"
             android:fontFamily="sans-serif"
-            android:text="Interests:"
+            android:text="@string/interests_input"
             android:textColor="@android:color/holo_red_dark"
             android:textSize="18sp"
             android:textStyle="bold|italic" />
@@ -44,7 +44,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
         android:fontFamily="casual"
-        android:text="NEXT"
+        android:text="@string/next"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@android:color/holo_red_dark"
@@ -52,15 +52,55 @@
         android:textStyle="bold"
         android:typeface="serif" />
 
-    <ImageView
-        android:id="@+id/imageView2"
+    <ImageButton
+        android:id="@+id/imageButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button"
-        android:layout_alignTop="@+id/button"
-        android:layout_marginEnd="15dp"
-        android:layout_marginTop="37dp"
-        app:srcCompat="@drawable/ssda" android:contentDescription="TODO"/>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/feedback"
+        app:srcCompat="@drawable/feedback" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:text="@string/feedback_here"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="@string/_24_hours_live_radio"
+        app:srcCompat="@drawable/radio" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageButton4"
+        android:layout_below="@+id/button"
+        android:fontFamily="serif"
+        android:text="@string/_24_hours_live_radio"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>

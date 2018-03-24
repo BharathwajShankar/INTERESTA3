@@ -1,44 +1,28 @@
 package com.bharathwaj.interesta;
-import android.content.Intent;
+
 import android.graphics.Bitmap;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
-import java.util.Objects;
-
-public class Music extends AppCompatActivity {
+public class Rad extends AppCompatActivity {
     WebView web;
     ProgressBar progressBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
-        setContentView( R.layout.activity_music );
+        setContentView( R.layout.activity_rad );
         web = (WebView) findViewById( R.id.Webview1 );
         progressBar = (ProgressBar) findViewById( R.id.progressbar1 );
-        web.setWebViewClient( new myWebClient());
+        web.setWebViewClient( new Rad.myWebClient() );
         web.getSettings().setJavaScriptEnabled( true );
-        Bundle bundle=getIntent().getExtras();
-        String data1=bundle.get("data1").toString();
-        if(Objects.equals( data1, "NEWS" )) {
-            web.loadUrl( "http://www.firstpost.com/tag/carnatic-music" );
-        }
-        if(Objects.equals( data1, "EVENTS" )){
-            web.loadUrl( "https://www.eventshigh.com/chennai/music+festival" );
-        }
-        if(Objects.equals( data1, "VIDEOS" )){
-            web.loadUrl( "https://www.youtube.com/watch?v=OAl5ja26LpE" );
-        }
-        if(Objects.equals( data1, "TUTORIALS" )){
-            Intent intent = new Intent( Music.this,Tutorial.class );
-            startActivity( intent );
-        }
+        web.loadUrl("http://radio.garden/");
     }
-
     public class myWebClient extends WebViewClient {
         @Override
         public void onPageStarted(WebView view, String url, Bitmap favicon) {
@@ -69,4 +53,3 @@ public class Music extends AppCompatActivity {
         return super.onKeyDown( keyCode, event );
     }
 }
-

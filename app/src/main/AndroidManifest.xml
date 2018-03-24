@@ -23,8 +23,8 @@
         <activity android:name=".DisplayActivity" />
         <activity android:name=".AddContents" />
         <activity android:name=".Cricket" />
-        <activity android:name=".Content"></activity>
-        <activity android:name=".Football"></activity>
+        <activity android:name=".Content" />
+        <activity android:name=".Football" />
         <activity android:name=".Horoscope" />
         <activity android:name=".Music" />
         <activity android:name=".Petcare" />
@@ -39,7 +39,9 @@
         <activity android:name=".Driving" />
         <activity android:name=".Food" />
         <activity android:name=".Gaming" />
-        <activity android:name=".ChatActivity"></activity>
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".Feedback" />
+        <activity android:name=".Rad"></activity>
     </application>
 
 </manifest>

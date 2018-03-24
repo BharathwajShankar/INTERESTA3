@@ -26,4 +26,10 @@
     <string name="welcome" />
     <string name="send" />
     <string name="groupchat">groupchat</string>
+    <string name="feedback" />
+    <string name="feedback_here">Feedback here</string>
+    <string name="interests_input">Interests:</string>
+    <string name="group_chat">group chat</string>
+    <string name="radio">radio</string>
+    <string name="_24_hours_live_radio">24 hours live radio</string>
 </resources>
