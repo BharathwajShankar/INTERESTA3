@@ -21,7 +21,7 @@ public class Rad extends AppCompatActivity {
         progressBar = (ProgressBar) findViewById( R.id.progressbar1 );
         web.setWebViewClient( new Rad.myWebClient() );
         web.getSettings().setJavaScriptEnabled( true );
-        web.loadUrl("http://radio.garden/");
+        web.loadUrl("http://www.india.fm/");
     }
     public class myWebClient extends WebViewClient {
         @Override
